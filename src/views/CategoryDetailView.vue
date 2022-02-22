@@ -1,6 +1,6 @@
 <template>
   <v-card flat>
-    <v-tabs v-model="currentCategory" align-with-title>
+    <v-tabs centered  show-arrows v-model="currentCategory" >
       <v-tabs-slider></v-tabs-slider>
 
       <v-tab v-for="category in categories" :key="category.name">
@@ -19,7 +19,7 @@
               cols="6"
             >
               <v-slide-y-transition>
-                <v-card height="250" v-show="showCards >= index">
+                <v-card height="275" v-show="showCards >= index">
                   <v-img height="150" :src="item.image"></v-img>
                   <v-card-title>{{ item.name }}</v-card-title>
                   <v-card-text
