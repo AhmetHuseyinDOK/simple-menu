@@ -1,4 +1,4 @@
-export const data = {
+export default   {
     categories: [
         {
             name: 'Kategori 1',
