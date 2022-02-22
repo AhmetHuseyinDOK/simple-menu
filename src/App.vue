@@ -10,7 +10,7 @@
           ><v-icon>mdi-arrow-left</v-icon></v-btn
         >
 
-        <v-toolbar-title style="font-family: 'Lobster Two', cursive !important">
+        <v-toolbar-title style="font-family: 'Redressed', cursive; !important">
           {{ name }}</v-toolbar-title
         >
       </div>
@@ -38,5 +38,5 @@ export default {
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 </style>
