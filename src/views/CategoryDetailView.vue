@@ -1,6 +1,6 @@
 <template>
   <v-card flat>
-    <v-tabs centered  show-arrows v-model="currentCategory" >
+    <v-tabs centered show-arrows v-model="currentCategory">
       <v-tabs-slider></v-tabs-slider>
 
       <v-tab v-for="category in categories" :key="category.name">
@@ -19,7 +19,11 @@
               cols="6"
             >
               <v-slide-y-transition>
-                <v-card height="275" v-show="showCards >= index">
+                <v-card
+                  @click="openDialog(item)"
+                  height="275"
+                  v-show="showCards >= index"
+                >
                   <v-img height="150" :src="item.image"></v-img>
                   <v-card-title>{{ item.name }}</v-card-title>
                   <v-card-text
@@ -32,6 +36,18 @@
         </v-container>
       </v-tab-item>
     </v-tabs-items>
+    <v-dialog v-model="dialogOpen">
+      <v-card v-if="dialogOpen">
+        <v-img height="300" :src="dialogItem.image"></v-img>
+        <v-card-title>{{ dialogItem.name }}</v-card-title>
+        <v-card-text
+          ><label>{{ dialogItem.price }}</label></v-card-text
+        >
+        <v-card-actions>
+          <v-btn block color="primary" @click="dialogOpen = false">Kapat</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
   </v-card>
 </template>
 
@@ -55,7 +71,15 @@ export default {
     showCards: 0,
     categories: data.categories,
     currentCategory: null,
+    dialogItem: null,
+    dialogOpen: false,
   }),
+  methods: {
+    openDialog(item) {
+      this.dialogItem = item;
+      this.dialogOpen = true;
+    },
+  },
 };
 </script>
 
