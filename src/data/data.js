@@ -1,4 +1,5 @@
 export default   {
+    companyName: "Test Lezzetleri",
     categories: [
         {
             name: 'Kategori 1',
@@ -56,11 +57,7 @@ export default   {
                     price: '30 tl',
                     image: 'https://cdn.getiryemek.com/restaurants/1608798504016_1125x522.jpeg'
                 },
-                {
-                    name: 'Item 9',
-                    price: '13 tl',
-                    image: 'https://cdn.yemek.com/mncrop/620/388/uploads/2020/04/lahmacun-hazirlik-10.jpg'
-                }
+               
             ]
         }
     ]

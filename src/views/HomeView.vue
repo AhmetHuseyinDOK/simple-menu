@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <v-container>
+      <h1 style="font-family: 'Quicksand', sans-serif;" class="mt-5 mb-5">Kategoriler</h1>
       <v-row>
         <v-col v-for="category in categories" :key="category.name" md="6">
           <v-card :to="`/${category.name}`">
@@ -25,3 +26,7 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+</style>
