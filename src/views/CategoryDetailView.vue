@@ -15,9 +15,10 @@
         <v-container>
           <v-row>
             <v-col v-for="item in category.items" :key="item.name" md="6">
-              <v-card :to="`/${item.name}`">
+              <v-card >
                 <v-img height="200" :src="item.image"></v-img>
-                <v-card-title>{{ item.name }}</v-card-title>
+                <v-card-title>{{item.name}}</v-card-title>
+                <v-card-text><label>{{item.price}}</label></v-card-text>
               </v-card>
             </v-col>
           </v-row>
