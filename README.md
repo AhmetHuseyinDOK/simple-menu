@@ -1,6 +1,6 @@
 # Simple Restaurant Menu App
 
-A simple menu app that is designed for small coffees and restaurants. VueJS is used the frontend framework.
+A simple menu app that is designed for small coffees and restaurants. VueJS is used as the frontend framework.
 
 <img width="300" alt="image" src="https://user-images.githubusercontent.com/24893654/155282165-05123803-d056-4c88-986c-ec52bda53235.png"> <img width="300" alt="image" src="https://user-images.githubusercontent.com/24893654/155282256-83c5d5fe-e9d2-43eb-8aa6-17c85310ae81.png"> <img width="300" alt="image" src="https://user-images.githubusercontent.com/24893654/155282284-7c0415a8-b39c-4691-840c-e016f640f891.png">
 
